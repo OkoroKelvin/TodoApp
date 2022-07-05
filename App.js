@@ -1,5 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import {KeyboardAvoidingView,StyleSheet,Text,View,TextInput,TouchableOpacity,Keyboard,ScrollView,} from "react-native";
+import Task from './components/Task';
+import React, { useState } from 'react';
 
 export default function App() {
   return (
