@@ -28,8 +28,6 @@ export default function App() {
     }}
     keyboardShouldPersistTaps="handled"
     >
-
-
         <View style={styles.tasksWrapper}>
           <Text style={styles.sectionTitle}>My ToDo List</Text>
           <View style={styles.items}>
@@ -47,14 +45,13 @@ export default function App() {
           </View>
         </View>
     </ScrollView>
-
     <KeyboardAvoidingView
         behavior={Platform.OS === "ios" ? "padding" : "height"}
         style={styles.writeTaskWrapper}
       >
         <TextInput
           style={styles.input}
-          placeholder={"Add new item"}
+          placeholder={"Kindly add text"}
           value={task}
           onChangeText={(text) => setTask(text)}
         />
@@ -64,12 +61,6 @@ export default function App() {
           </View>
         </TouchableOpacity>
       </KeyboardAvoidingView>
-
-
-
-
-
-
     </View>
   );
 }
@@ -77,7 +68,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#E5E5E5",
+    backgroundColor: "#E25098",
   },
   tasksWrapper: {
     paddingTop: 80,
